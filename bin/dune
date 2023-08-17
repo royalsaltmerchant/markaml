@@ -1,4 +1,0 @@
-(executable
- (public_name markaml)
- (name main)
- (libraries omd jingoo str))
