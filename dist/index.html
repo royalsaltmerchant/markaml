@@ -37,17 +37,6 @@
 <ol><li>The folder location that contains all your markdown files to be generated.</li><li>The output directory.</li></ol>
 
 <p>Example: <code>dune exec markaml src/md dist</code></p>
-<p>The output folder will be structured like so:</p>
-<pre><code>Dir
-  - first_item
-    - index.html
-  - second_item
-    - index.html
-  ...
-
-</code></pre><p>Each markdown item creates a folder with its corresponding name and an index.</p>
-<p>This is done so that navigation does not append .html when statically hosted.</p>
-<h3 id="Index">Index</h3><p>The script looks for a markdown file called &quot;index.md&quot; which creates an index.html file at the root of the output dir as well as a subfolder called index.</p>
 
 
     </section>
