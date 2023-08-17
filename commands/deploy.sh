@@ -1,20 +1,7 @@
 #!/bin/bash
 
-# Check for uncommitted changes in the main branch
-if ! git diff-index --quiet HEAD --; then
-    echo "You have uncommitted changes. Please commit or stash them first."
-    exit 1
-fi
-
-# Make sure we're in the main (or master) branch
-CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-if [ "$CURRENT_BRANCH" != "main" ]; then
-    echo "You are not in the 'main' branch. Please switch to the main branch before running this script."
-    exit 1
-fi
-
 # Build the project (assuming you have a build script to generate/refresh the /dist folder)
-dune exec markaml
+dune exec markaml src/md dist
 
 # Commit any potential changes after the build (Optional)
 git add .
