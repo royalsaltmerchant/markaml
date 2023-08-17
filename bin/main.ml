@@ -7,11 +7,30 @@ let read_file filename =
   close_in ic;
   s
 
+let get_title filename = 
+  (* Step 1: Remove the suffix *)
+  let without_suffix =
+    try
+      Filename.chop_suffix filename ".md"
+    with Invalid_argument _ -> filename (* In case the suffix does not exist *)
+  in
+
+  (* Step 2: Replace '-' or '_' with ' ' *)
+  let with_spaces = Str.global_replace (Str.regexp "[-_]") " " without_suffix in
+
+  (* Step 3: Capitalize each word *)
+  let capitalize_each_word str =
+    let words = Str.split (Str.regexp " +") str in
+    let capitalized_words = List.map String.capitalize_ascii words in
+    String.concat " " capitalized_words
+  in
+  capitalize_each_word with_spaces
+
 let handle_pages filename sidebar_items =
   let input_path = Sys.argv.(1) ^ "/" ^ filename in
   let parsed_md = Omd.of_string (read_file input_path) in
   let html_output = Omd.to_html parsed_md in
-  let jingoo_output = Jg_template.from_file "src/default.jingoo.html" ~models:[("inside", Jg_types.Tstr html_output); ("sidebar_items", Jg_types.Tarray sidebar_items)] in
+  let jingoo_output = Jg_template.from_file "src/default.jingoo.html" ~models:[("inside", Jg_types.Tstr html_output); ("sidebar_items", Jg_types.Tarray sidebar_items); ("title", Jg_types.Tstr (get_title filename))] in
   let oc = open_out (Filename.concat Sys.argv.(2) (Filename.chop_suffix filename ".md" ^ ".html")) in
   output_string oc jingoo_output;
   close_out oc
