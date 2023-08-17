@@ -12,20 +12,3 @@ The command takes in two arguments
 2. The output directory.
 
 Example: `dune exec markaml src/md dist`
-
-The output folder will be structured like so:
-```
-Dir
-  - first_item
-    - index.html
-  - second_item
-    - index.html
-  ...
-
-```
-Each markdown item creates a folder with its corresponding name and an index. 
-
-This is done so that navigation does not append .html when statically hosted. 
-
-### Index
-The script looks for a markdown file called "index.md" which creates an index.html file at the root of the output dir as well as a subfolder called index. 
