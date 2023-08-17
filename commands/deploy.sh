@@ -17,7 +17,7 @@ git merge main --no-edit
 find . -maxdepth 1 ! -name 'dist' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
 
 # Move the content of the dist folder to the root directory
-mv dist/** .
+mv dist/* .
 
 # Add and commit the changes to gh-pages
 git add .
