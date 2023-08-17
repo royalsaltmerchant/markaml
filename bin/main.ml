@@ -33,7 +33,7 @@ let handle_sidebar_items filename =
     let capitalized_words = List.map String.capitalize_ascii words in
     String.concat " " capitalized_words
   in
-  Jg_types.Tstr ("<a href=\"/" ^ without_suffix ^ ".html\">" ^ (capitalize_each_word with_spaces) ^ "</a>")
+  Jg_types.Tstr ("<a href=\"./" ^ without_suffix ^ ".html\">" ^ (capitalize_each_word with_spaces) ^ "</a>")
 
 
 let main () =
