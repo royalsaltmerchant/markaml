@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# Build the project (assuming you have a build script to generate/refresh the /dist folder)
-dune exec markaml src/md dist
-
-# Commit any potential changes after the build (Optional)
-git add .
-git commit -m "Committing changes before updating gh-pages"
-
 # Move to gh-pages branch
 git checkout gh-pages
 
@@ -24,6 +17,3 @@ git add .
 git commit -m "Update content from dist folder"
 # Push to gh
 git push origin head
-
-# Return to the main branch
-git checkout main
