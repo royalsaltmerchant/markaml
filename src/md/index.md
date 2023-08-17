@@ -5,6 +5,7 @@ The script is making use of Jingoo templates and the Omd markdown lib.
 
 This is just a hobby project, if you want to add features feel free to make a PR.
 
+
 ## Generate
 
 The command takes in two arguments
