@@ -20,7 +20,14 @@ let handle_pages filename sidebar_items =
   ensure_dir_exists output_dir;
   let oc = open_out (Filename.concat output_dir "index.html") in
   output_string oc jingoo_output;
-  close_out oc
+  close_out oc;
+  (* If filename is "index.md", create an additional "index.html" in the parent directory *)
+  if filename = "index.md" then (
+    let parent_dir_index = Sys.argv.(2) ^ "/index.html" in
+    let oc_parent = open_out parent_dir_index in
+    output_string oc_parent jingoo_output;
+    close_out oc_parent
+  )
 
 let handle_sidebar_items filename = 
   (* Step 1: Remove the suffix *)
