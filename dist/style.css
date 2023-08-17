@@ -36,6 +36,7 @@ body {
 
 p {
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 a {
