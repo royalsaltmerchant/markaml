@@ -26,6 +26,9 @@ Dir
 Each markdown item creates a folder with its corresponding name and an index. 
 This is done so that navigation does not append .html when statically hosted. 
 
+### Index
+The script looks for a markdown file called "index.md" which creates an index.html file at the root of the output dir as well as a subfolder called index. 
+
 ## Sidebar
 The script will replace characters; "-" and "_"  with " " from the title of the markdown file, as well as the suffix ".md" and capitalize each word in the title to produce each item on the sidebar. To ensure there are no issues, it is recommended to refrain from using spaces in your filenames.
 
