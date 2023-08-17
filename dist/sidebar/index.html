@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/index.js" defer></script>
+</head>
+<body>
+  <main>
+    <!-- loop sidebar elems -->
+    <nav>
+      
+      <a><a href="/index">Index</a></a>
+      
+      <a><a href="/sidebar">Sidebar</a></a>
+      
+      <svg id="hide-nav-btn" width="24" height="24" viewBox="0 0 24 24" onclick="hideNav()">
+        <rect y="4" width="24" height="2" fill="var(--a-blue)"/>
+        <rect y="11" width="24" height="2" fill="var(--a-blue)"/>
+        <rect y="18" width="24" height="2" fill="var(--a-blue)"/>
+      </svg>
+    </nav>
+    <svg id="show-nav-btn" width="24" height="24" viewBox="0 0 24 24" onclick="showNav()">
+      <rect y="4" width="24" height="2" fill="var(--a-blue)"/>
+      <rect y="11" width="24" height="2" fill="var(--a-blue)"/>
+      <rect y="18" width="24" height="2" fill="var(--a-blue)"/>
+    </svg>
+    <section>
+      <h2 id="Sidebar">Sidebar</h2><p>The script will replace characters; &quot;-&quot; and &quot;_&quot;  with &quot; &quot; from the title of the markdown file, as well as the suffix &quot;.md&quot; and capitalize each word in the title to produce each item on the sidebar. To ensure there are no issues, it is recommended to refrain from using spaces in your filenames.</p>
+
+
+    </section>
+  </main>
+</body>
+</html>

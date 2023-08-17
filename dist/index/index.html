@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/index.js" defer></script>
+</head>
+<body>
+  <main>
+    <!-- loop sidebar elems -->
+    <nav>
+      
+      <a><a href="/index">Index</a></a>
+      
+      <a><a href="/sidebar">Sidebar</a></a>
+      
+      <svg id="hide-nav-btn" width="24" height="24" viewBox="0 0 24 24" onclick="hideNav()">
+        <rect y="4" width="24" height="2" fill="var(--a-blue)"/>
+        <rect y="11" width="24" height="2" fill="var(--a-blue)"/>
+        <rect y="18" width="24" height="2" fill="var(--a-blue)"/>
+      </svg>
+    </nav>
+    <svg id="show-nav-btn" width="24" height="24" viewBox="0 0 24 24" onclick="showNav()">
+      <rect y="4" width="24" height="2" fill="var(--a-blue)"/>
+      <rect y="11" width="24" height="2" fill="var(--a-blue)"/>
+      <rect y="18" width="24" height="2" fill="var(--a-blue)"/>
+    </svg>
+    <section>
+      <h1 id="Markaml">Markaml</h1><p>This is a quick and dirty site generator that takes markdown files and produces html pages with a sidebar.</p>
+<p>The script is making use of Jingoo templates and the Omd markdown lib.</p>
+<p>This is just a hobby project, if you want to add features feel free to make a PR.</p>
+<h2 id="Generate">Generate</h2>
+
+<p>The command takes in two arguments</p>
+<ol><li>The folder location that contains all your markdown files to be generated.</li><li>The output directory.</li></ol>
+
+<p>Example: <code>dune exec markaml src/md dist</code></p>
+<p>The output folder will be structured like so:</p>
+<pre><code>Dir
+  - first_item
+    - index.html
+  - second_item
+    - index.html
+  ...
+
+</code></pre><p>Each markdown item creates a folder with its corresponding name and an index.</p>
+<p>This is done so that navigation does not append .html when statically hosted.</p>
+
+
+    </section>
+  </main>
+</body>
+</html>
