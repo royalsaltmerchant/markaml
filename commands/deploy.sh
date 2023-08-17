@@ -22,9 +22,8 @@ mv dist/* .
 # Add and commit the changes to gh-pages
 git add .
 git commit -m "Update content from dist folder"
+# Push to gh
+git push origin head
 
 # Return to the main branch
 git checkout main
-
-# Inform the user to push both main and gh-pages
-echo "Update complete. Please push changes: git push --all"
