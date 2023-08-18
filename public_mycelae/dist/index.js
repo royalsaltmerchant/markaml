@@ -40,6 +40,7 @@ function capitalize(str) {
 
 // Function to insert an element after a reference node
 function insertAfter(newNode, referenceNode) {
+  console.log(referenceNode)
   if (referenceNode.nextSibling) {
       referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
   } else {
@@ -63,13 +64,16 @@ headers.forEach(function (header) {
 function createSubNavItems() {
   // add to current page as sub navigation
   try {
-    let pageId = `nav-item-${capitalize(
+    let pageName = capitalize(
       window.location.pathname
         .split("/")
         [window.location.pathname.split("/").length - 1].replace(".html", "")
-    )}`;
-    if (!pageId) pageId = "nav-item-Index";
+    )
+    if (!pageName) pageName = "Index";
+    const pageId = `nav-item-${pageName}`;
+    console.log(pageId)
     const navItemElem = document.getElementById(pageId);
+    console.log(navItemElem)
     let lastInsertedNode = navItemElem;
     for (var header of headers) {
       const headerElem = document.createElement("a");
