@@ -25,3 +25,5 @@ Alta Moda, in the major continent of
 Damabrae
 for an afternoon of reckoning a newly uncovered document from beneath mount
 Va'aurum, of which few would be brave enough to gaze upon...
+<br>
+![Current map of Mycelae](./mycelae0.1.1.webp)
