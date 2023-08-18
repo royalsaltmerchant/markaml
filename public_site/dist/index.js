@@ -68,7 +68,7 @@ function createSubNavItems() {
         .split("/")
         [window.location.pathname.split("/").length - 1].replace(".html", "")
     )}`;
-    if (!pageId) pageId = "Index";
+    if (!pageId) pageId = "nav-item-Index";
     const navItemElem = document.getElementById(pageId);
     let lastInsertedNode = navItemElem;
     for (var header of headers) {
