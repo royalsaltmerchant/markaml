@@ -83,7 +83,17 @@ let main () =
         (*create searchable headings*)
         let headings =  Array.map extract_headings files_in_dir in
         (*then create pages*)
-        Array.iter (fun filename -> handle_pages filename sidebar_items headings) files_in_dir
+        Array.iter (fun filename -> handle_pages filename sidebar_items headings) files_in_dir;
+        (*copy other assets to dist*)
+        let css_file = read_file "src/style.css" in
+        let oc_css = open_out @@ Filename.concat Sys.argv.(2) "style.css" in
+        output_string oc_css css_file;
+        close_out oc_css;
+
+        let js_file = read_file "src/index.js" in
+        let oc_js = open_out @@ Filename.concat Sys.argv.(2) "index.js" in
+        output_string oc_js js_file;
+        close_out oc_js
       with Sys_error e ->
         Printf.printf "There was an error: %s\n" e
     )
