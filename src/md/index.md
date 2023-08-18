@@ -1,8 +1,6 @@
 # Markaml
 This is a quick and dirty site generator that takes markdown files and produces html pages with a sidebar. 
-
 The script is making use of Jingoo templates and the Omd markdown lib.
-
 This is just a hobby project, if you want to add features feel free to make a PR.
 
 

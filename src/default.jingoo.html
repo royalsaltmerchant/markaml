@@ -12,7 +12,7 @@
     <!-- loop sidebar elems -->
     <nav>
       {% for item in sidebar_items %}
-      <a>{{item|safe}}</a>
+      {{item|safe}}
       {% endfor %}
       <svg id="hide-nav-btn" width="24" height="24" viewBox="0 0 24 24" onclick="hideNav()">
         <rect y="4" width="24" height="2" fill="var(--a-blue)"/>
