@@ -94,8 +94,17 @@ section {
   overflow: scroll;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
   color: var(--bright-white);
+  transition: all 0.2s;
+}
+
+h1:hover::after, h2:hover::after, h3:hover::after, h4:hover::after {
+  content: "🔗";
+  margin-left: 5px;
+  font-size: 0.8em;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 h1 {
@@ -135,4 +144,18 @@ code {
   margin-bottom: 5px;
   margin-left: 5px;;
   cursor: pointer;
+}
+
+input {
+  float: right;
+  color: inherit;
+  font: inherit;
+  padding: 2px 10px;
+  background-color: var(--second-dark);
+  border: 1px solid var(--main-gray);
+  border-radius: 30px;
+}
+
+input:focus {
+  outline: 1px solid var(--light-blue);
 }

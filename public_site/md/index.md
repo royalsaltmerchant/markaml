@@ -11,3 +11,9 @@ The command takes in two arguments
 2. The output directory.
 
 Example: `dune exec markaml src/md dist`
+
+## Hrefs
+Headers are automatically populated with clickable link icons which correspond with their unique IDs. They appear when the cursor hovers over the header. Clicking them will copy the link to your clipboard as well as navigate.
+
+## Sidebar
+The script will replace characters; "-" and "_"  with " " from the title of the markdown file, as well as the suffix ".md" and capitalize each word in the title to produce each item on the sidebar. To ensure there are no issues, it is recommended to refrain from using spaces in your filenames.

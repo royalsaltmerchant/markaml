@@ -11,6 +11,15 @@
   <main>
     <!-- loop sidebar elems -->
     <nav>
+      <input list="headings" id="search" type="text" placeholder="Search">
+      <datalist id="headings">
+        {% for heading in headings %}
+          {% for item in heading %}
+          <option value="{{item.path}}">{{item.title}}</option>
+          {% endfor %}
+        {% endfor %}
+      </datalist>
+      <br>
       {% for item in sidebar_items %}
       {{item|safe}}
       {% endfor %}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index</title>
+  <title>Example</title>
   <link rel="stylesheet" href="style.css">
   <script src="index.js" defer></script>
 </head>
@@ -55,17 +55,25 @@
       <rect y="18" width="24" height="2" fill="var(--a-blue)"/>
     </svg>
     <section>
-      <h1 id="Markaml">Markaml</h1><p>This is a quick and dirty site generator that takes markdown files and produces html pages with a sidebar. 
-The script is making use of Jingoo templates and the Omd markdown lib.
-This is just a hobby project, if you want to add features feel free to make a PR.</p>
-<h2 id="Generate">Generate</h2>
+      <h1 id="Example">Example</h1>
 
-<p>The command takes in two arguments</p>
-<ol><li>The folder location that contains all your markdown files to be generated.</li><li>The output directory.</li></ol>
+<h2 id="Subsection">Subsection</h2>
 
-<p>Example: <code>dune exec markaml src/md dist</code></p>
-<h2 id="Hrefs">Hrefs</h2><p>Headers are automatically populated with clickable link icons which correspond with their unique IDs. They appear when the cursor hovers over the header. Clicking them will copy the link to your clipboard as well as navigate.</p>
-<h2 id="Sidebar">Sidebar</h2><p>The script will replace characters; &quot;-&quot; and &quot;_&quot;  with &quot; &quot; from the title of the markdown file, as well as the suffix &quot;.md&quot; and capitalize each word in the title to produce each item on the sidebar. To ensure there are no issues, it is recommended to refrain from using spaces in your filenames.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus <strong>lacinia</strong> odio vitae <em>vestibulum</em>.</p>
+<h3 id="Another-Subsection">Another Subsection</h3>
+
+<p>Donec in efficitur leo. Proin et nulla ante. Here&#39;s a link: <a href='https://github.com/royalsaltmerchant/markaml'>Github-Repo</a></p>
+<h4 id="Lists">Lists</h4>
+
+<ul><li>Item 1</li><li>Item 2<ul><li>Sub-item 1</li><li>Sub-item 2</li></ul></li><li>Numbered item 1</li><li>Numbered item 2<ol><li>Sub-numbered item 1</li><li>Sub-numbered item 2</li></ol></li></ul>
+
+<h4 id="Code">Code</h4>
+
+<p>Here&#39;s some inline code: <code>var x = 10;</code></p>
+<p>And a code block:</p>
+<p>```javascript
+function greet() {</p>
+<pre><code>console.log(&quot;Hello, World!&quot;);</code></pre><p>}</p>
 
 
     </section>
