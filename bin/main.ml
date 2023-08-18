@@ -26,6 +26,9 @@ let capitalize_each_word str =
 
 let get_title filename = 
   capitalize_each_word @@ with_spaces @@ without_suffix filename
+
+let replace_spaces_with_dashes str =
+  Str.global_replace (Str.regexp " ") "-" str
 let extract_headings filename =
   let input_path = Sys.argv.(1) ^ "/" ^ filename in
   let raw_markdown = read_file input_path in
@@ -40,7 +43,7 @@ let extract_headings filename =
             String.sub str (idx + 1) ((String.length str) - idx - 1)
           in
           let updated_path = change_suffix @@ file_name input_path in
-          (updated_path ^ "#" ^ title) 
+          (updated_path ^ "#" ^ replace_spaces_with_dashes title) 
         in
         Some (Jg_types.Tobj [
           ("title", Jg_types.Tstr title);
