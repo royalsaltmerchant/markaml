@@ -63,11 +63,12 @@ headers.forEach(function (header) {
 function createSubNavItems() {
   // add to current page as sub navigation
   try {
-    const pageId = `nav-item-${capitalize(
+    let pageId = `nav-item-${capitalize(
       window.location.pathname
         .split("/")
         [window.location.pathname.split("/").length - 1].replace(".html", "")
     )}`;
+    if (!pageId) pageId = "Index";
     const navItemElem = document.getElementById(pageId);
     let lastInsertedNode = navItemElem;
     for (var header of headers) {
