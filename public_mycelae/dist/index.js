@@ -2,14 +2,14 @@ let nav = document.getElementsByTagName("nav")[0];
 let showNavBtn = document.getElementById("show-nav-btn");
 let isNavVisible = true;
 
-window.addEventListener("resize", function () {
-  if (window.innerWidth <= 1000 && isNavVisible) {
-    // Change 600 to your breakpoint
-    hideNav();
-  } else if (window.innerWidth > 1000 && !isNavVisible) {
-    showNav();
-  }
-});
+// window.addEventListener("resize", function () {
+//   if (window.innerWidth <= 1000 && isNavVisible) {
+//     // Change 600 to your breakpoint
+//     hideNav();
+//   } else if (window.innerWidth > 1000 && !isNavVisible) {
+//     showNav();
+//   }
+// });
 
 function hideNav() {
   nav.style.transform = "translateX(-100%)";
