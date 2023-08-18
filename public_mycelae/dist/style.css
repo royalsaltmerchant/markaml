@@ -188,3 +188,7 @@ input {
 input:focus {
   outline: 1px solid var(--light-blue);
 }
+
+img {
+  max-width: 100%;
+}
