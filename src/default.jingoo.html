@@ -14,15 +14,17 @@
       <input list="headings" id="search" type="text" placeholder="Search">
       <datalist id="headings">
         {% for heading in headings %}
-          {% for item in heading %}
-          <option value="{{item.path}}">{{item.title}}</option>
-          {% endfor %}
+        {% for item in heading %}
+        <option value="{{item.path}}">{{item.title}}</option>
+        {% endfor %}
         {% endfor %}
       </datalist>
       <br>
-      {% for item in sidebar_items %}
-      {{item|safe}}
-      {% endfor %}
+      <div class="nav-items">
+        {% for item in sidebar_items %}
+        {{item|safe}}
+        {% endfor %}
+      </div>
       <svg id="hide-nav-btn" width="24" height="24" viewBox="0 0 24 24" onclick="hideNav()">
         <rect y="4" width="24" height="2" fill="var(--a-blue)"/>
         <rect y="11" width="24" height="2" fill="var(--a-blue)"/>

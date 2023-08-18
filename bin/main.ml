@@ -66,7 +66,7 @@ let handle_pages filename sidebar_items headings =
   close_out oc
 
 let handle_sidebar_items filename =   
-  Jg_types.Tstr ("<a href=\"./" ^ (with_spaces @@ change_suffix filename) ^ "\">" ^ (capitalize_each_word @@ with_spaces @@ without_suffix filename) ^ "</a>")
+  Jg_types.Tstr ("<a id=\"nav-item-" ^ (capitalize_each_word @@ with_spaces @@ without_suffix filename) ^ "\" href=\"./" ^ (with_spaces @@ change_suffix filename) ^ "\">" ^ (capitalize_each_word @@ with_spaces @@ without_suffix filename) ^ "</a>")
 
 
 
