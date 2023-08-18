@@ -34,9 +34,23 @@ if (window.innerWidth <= 1000) {
   hideNav();
 } else showNav();
 
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// Function to insert an element after a reference node
+function insertAfter(newNode, referenceNode) {
+  if (referenceNode.nextSibling) {
+      referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+  } else {
+      referenceNode.parentNode.appendChild(newNode);
+  }
+}
+
 // Event listener for header hrefs
 var headers = document.querySelectorAll("h1, h2, h3, h4");
 headers.forEach(function (header) {
+  // add click listeneres for href
   header.addEventListener("click", function (e) {
     if (e.target === header) {
       // Ensure we're clicking on the header itself
@@ -45,13 +59,41 @@ headers.forEach(function (header) {
     }
   });
 });
+
+function createSubNavItems() {
+  // add to current page as sub navigation
+  try {
+    const pageId = `nav-item-${capitalize(
+      window.location.pathname
+        .split("/")
+        [window.location.pathname.split("/").length - 1].replace(".html", "")
+    )}`;
+    const navItemElem = document.getElementById(pageId);
+    let lastInsertedNode = navItemElem;
+    for (var header of headers) {
+      const headerElem = document.createElement("a");
+      headerElem.href = `#${header.getAttribute("id")}`;
+      headerElem.className = "sub-a";
+      headerElem.innerText = header.innerText;
+      insertAfter(headerElem, lastInsertedNode);
+      lastInsertedNode = headerElem;
+    }
+  } catch (err) {
+    console.log(err);
+  }
+}
+createSubNavItems();
+
 // copy
 function copyToClipboard(text) {
-  navigator.clipboard.writeText(text).then(function() {
-    console.log('Copying to clipboard was successful!');
-  }, function(err) {
-    console.error('Could not copy text: ', err);
-  });
+  navigator.clipboard.writeText(text).then(
+    function () {
+      console.log("Copying to clipboard was successful!");
+    },
+    function (err) {
+      console.error("Could not copy text: ", err);
+    }
+  );
 }
 
 // handle search

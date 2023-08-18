@@ -4,7 +4,7 @@
   --main-dark: rgb(25, 29, 37);
   --second-dark: rgb(21, 24, 31);
   --black: rgb(19, 20, 24);
-  --light-blue: rgb(66, 85, 119);
+  --light-blue: rgb(97, 122, 165);
   --second-blue: rgb(55, 71, 99);
   --dark-blue: rgb(38, 44, 57);
   --a-blue: rgb(157, 179, 211);
@@ -49,6 +49,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.sub-a {
+  color: var(--light-blue);
+  margin-left: 10px;
+}
+
 br {
   display: block;
   content: "";
@@ -71,6 +76,16 @@ nav {
   background-color: var(--dark-blue);
   transition: transform 0.5s ease, opacity 0.5s ease;
   opacity: 1;
+  overflow: auto;
+}
+
+.nav-items {
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1; */
+  scrollbar-width: none;
+  overflow: auto;
 }
 
 /* Initial state for small screens. It's hidden off to the left. */
@@ -84,6 +99,8 @@ nav {
 
 nav a {
   margin-bottom: 6px;
+  display: block;
+
 }
 
 section {
@@ -91,15 +108,23 @@ section {
   flex-direction: column;
   flex: 1;
   padding: 10px 20px;
-  overflow: scroll;
+  scrollbar-width: none;
+  overflow: auto;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   color: var(--bright-white);
   transition: all 0.2s;
+  cursor: pointer;
 }
 
-h1:hover::after, h2:hover::after, h3:hover::after, h4:hover::after {
+h1:hover::after,
+h2:hover::after,
+h3:hover::after,
+h4:hover::after {
   content: "🔗";
   margin-left: 5px;
   font-size: 0.8em;
@@ -110,14 +135,17 @@ h1:hover::after, h2:hover::after, h3:hover::after, h4:hover::after {
 h1 {
   font-size: 2rem;
 }
+
 h2 {
   font-size: 1.7rem;
 }
+
 h3 {
   font-size: 1.3rem;
 }
 
-ul,ol {
+ul,
+ol {
   margin-left: 30px;
   margin-bottom: 20px;
 }
@@ -142,7 +170,8 @@ code {
 #show-nav-btn {
   margin-top: auto;
   margin-bottom: 5px;
-  margin-left: 5px;;
+  margin-left: 5px;
+  ;
   cursor: pointer;
 }
 
