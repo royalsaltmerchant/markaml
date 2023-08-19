@@ -130,3 +130,21 @@ He teaches magic at the university in Edinsburg
 
 The grandson of the once great king of the dramshire dynasty, Preston keeps a low profile as a member of the Aristocracy in Wystria
 
+## Arthur Yole
+
+Arthur Yole is a enigmatic and influential figure in the political landscape of Damabrae. Born into a family with a long history of wealth and connections, Arthur quickly rose to prominence through his charisma, intelligence, and shrewd business acumen. As a member of the Council of Public Safety, he plays a key role in shaping the republic's policies and decisions.
+
+Beyond his public image as a respected businessman, Arthur is known to operate in the shadows, orchestrating covert operations and manipulation of resources. He is believed to use his family's vast business network to discreetly further the Council's agendas, often leaving no trace of his involvement. Despite his enigmatic nature, his connections and influence are felt throughout Damabrae's social and political circles.
+
+Rumors suggest that Arthur Yole has a particular interest in information gathering and espionage, making him a formidable force in the Council's efforts to maintain control and expand their influence. His ability to navigate the intricate web of political intrigue has earned him both allies and enemies, making him a figure to be reckoned with in the world of Damabrae's power struggles.
+
+## Harold Darcy
+
+Harold Darcy, the affable owner of the Darcy Lute Company and the prestigious Courmaise Theatre House, is a man of many faces. While he is widely known for his contributions to Damabrae's cultural scene, his involvement in the Council of Public Safety reveals a hidden side of his persona. A master of illusion both on and off the stage, Harold's talents extend beyond entertainment.
+
+As a member of the Council, Harold uses his public-facing enterprises as a cover for his covert operations. The Courmaise Theatre House, frequented by artists and aristocrats alike, serves as a gathering place for like-minded individuals who share the Council's interests. Under the guise of artistic appreciation, the theatre house becomes a hub of political scheming and subterfuge.
+
+Harold's connections and influence in both the entertainment and political spheres make him a valuable asset to the Council's goals. He is believed to manipulate events, move assets, and facilitate covert communications, all while maintaining an air of innocence. His ability to maintain a veneer of respectability while engaging in shadowy dealings has earned him a reputation as a master manipulator.
+
+Together with his fellow council members, Harold Darcy operates behind the scenes to shape Damabrae's destiny, utilizing his skills in deception and influence to further the Council's reach. His dual identity as an entertainer and a political player makes him a fascinating and complex figure in the republic's landscape.
+
