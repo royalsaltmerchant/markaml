@@ -21,6 +21,8 @@ The heavenly bodiesare governed by Amaterum,and from them flows into matteran un
 
 Orin's pendant comes from the heart of the spirit tree in Diamant forest sacred grove. It is a small, silver pendant that is inlaid with a brilliant blue gemstone that glows softly in the dark. The gemstone is said to contain a small fragment of a powerful celestial artifact, imbuing the pendant with magical properties that aid Orin in his spellcasting.The pendant has the ability to amplify Orin's magical powers, allowing him to cast spells with greater ease and effectiveness. It can also be used to store magical energy, allowing Orin to draw on its power at a later time if needed. However, the pendant's powers are not limitless, and must be recharged periodically.
 
+Summons a lightning strike once a day. Enemy makes a DEX saving throw, 5D8 radiant damage on a fail. 2D8 on a save.
+
 ## The Eye of Shadows 
 
 The Eye of Shadows is a small, unremarkable looking stone that is said to possess immense power. It is said that those who possess the Eye of Shadows gain the ability to see in total darkness, and can even control the shadows themselves. Jorpus obtained the Eye of Shadows through a shady deal with an unknown seller, and keeps it well guarded in his collection.
@@ -51,7 +53,7 @@ Celestial Attunement: A Starweaver is deeply attuned to the celestial energies a
 
 ## Lunar Compass
 
-A mystical compass with a face crafted from a rare lunar stone. This instrument is attuned to the phases of the moon and allows the Starweavers to navigate by its guidance. By aligning the compass with the moon's position, they can harness the moon's energy for rituals and spellcasting, amplifying their magic under its influence.Added to a weapon it does 5D8 radiant damage at nighttake one turn to set the alignment according to the position of the moon.
+A mystical compass with a face crafted from a rare lunar stone. This instrument is attuned to the phases of the moon and allows the Starweavers to navigate by its guidance. By aligning the compass with the moon's position, they can harness the moon's energy for rituals and spellcasting, amplifying their magic under its influence. Added to a weapon it does 5D8 radiant damage at night. Take one turn to set the alignment according to the position of the moon.
 
 ## Shadow Mist
 
