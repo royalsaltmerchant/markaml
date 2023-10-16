@@ -45,11 +45,24 @@ The Amulet of Nature's Vigil is a beautifully crafted pendant, intricately desig
 
 A grimoire containing ancient spells and incantations infused with celestial power. These spells draw upon the energies of the stars, planets, and cosmic forces. The Tome of Celestial Incantations offers a glimpse into the advanced spellcasting practices of the Starweavers.
 
-Celestial Attunement: A Starweaver is deeply attuned to the celestial energies and can tap into the power of the stars. This connection allows them to infuse their spells, items and abilities with radiant or ethereal effects, enhancing their potency. Use Attunement by taking one turn to empower your object/ability with radiant damage for 1d6 of every level you currently have. (Cantrip)Stellar Sight: Starweavers possess enhanced vision in low light or darkness, being able to see clearly amidst starlit environments. They can discern hidden details and navigate through dimly lit areas with ease. +2 to investigation checks.Celestial Blessing: Starweavers can call upon celestial forces to bestow blessings upon themselves or their allies. These blessings augment their abilities temporarily, granting boosts to strength, agility, or magical prowess. For 1 minute target up to 3 beings to receive the blessing of +2 for your ability of choice. (1 of any spell slot)Celestial Lore: Starweavers have access to celestial knowledge and can tap into cosmic insights. They can establish connections with celestial beings, seek guidance, and gain understanding of celestial prophecies or events. You can tap into the energy of familiar celestial beings, roll an insight check to evaluate the response. Astral Healing: Starweavers can harness celestial energy for healing purposes. They can accelerate the natural healing process, mending wounds and revitalizing themselves or others through the rejuvenating power of the stars. Health potions can be used with a double roll. Short rests allow for double the hit dice to be rolled. (1 of any spell slot)Starfall Barrage: Starweavers can summon a barrage of starlight projectiles that rain down upon enemies. These radiant projectiles burn and disorient foes while purging darkness and malevolent influences. 5d8 radiant damage. (4th level spell)
+(All take 1 spell slot of any choice unless specified; Components: S or lunar stone)
+
+**Celestial Attunement:** A Starweaver is deeply attuned to the celestial energies and can tap into the power of the stars. This connection allows them to infuse their spells, items and abilities with radiant or ethereal effects, enhancing their potency. Use Attunement by taking one turn to empower your object/ability with radiant damage of d6 dice equivalent to your proficiency bonus.
+**Higher Levels:** Upon reaching level 9 or higher you can double the d6 dice.
+
+**Celestial Light:** Magically produced star-light allows the user the ability to see more clearly in any environment. +3 to investigation checks. 
+
+**Celestial Blessing:** Starweavers can call upon celestial forces to bestow blessings upon themselves or their allies. These blessings augment their abilities temporarily, granting boosts to ability scores. For a total of 3 rounds of combat you may target up to 3 beings to receive the blessing of +3 for your ability of choice.
+
+**Cosmic Lore:** Starweavers have access to celestial knowledge and can tap into cosmic insights. They can establish connections with celestial beings, seek guidance, and gain understanding of celestial prophecies or events. You can tap into the energy of familiar celestial beings, roll an insight check to evaluate the response.
+
+**Astral Healing:** Starweavers can harness celestial energy for healing purposes. They can accelerate the natural healing process, mending wounds and revitalizing themselves or others through the rejuvenating power of the stars. Health potions can be used with a double roll. Short rests allow for double the hit dice to be rolled.
+
+**Starfall Barrage:** Starweavers can summon a barrage of starlight projectiles that rain down upon enemies. These radiant projectiles burn and disorient foes while purging darkness and malevolent influences. 5d8 radiant damage. (4th level spell slot or higher)
 
 ## Tome of Celios
 
-....
+This ancient text, once wielded to open a magical barrier beneath Mt. Va'aurum has been destroyed by fire.
 
 ## Lunar Compass
 
@@ -57,9 +70,9 @@ A mystical compass with a face crafted from a rare lunar stone. This instrument 
 
 ## Shadow Mist
 
-creates a shadowy mist around the wielder. Within 10ft radius, all creatures are blind including the wielder.
+Creates a shadowy mist around the wielder. Within 10ft radius, all creatures are blind including the wielder up to 3 rounds of combat.
 
 ## Carol Shroom
 
-Makes you small when eaten
+Whoever ingests this mushroom will turn 'small' for a duration of a few hours.
 
