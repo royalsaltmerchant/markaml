@@ -13,9 +13,13 @@ The command takes in two arguments
 Example: `dune exec markaml src/md dist`
 
 ## Compile
-If you want to compile the program into an executable:
+If you want to compile the program into bytecode executable with dynamic linking:
 
 `ocamlfind ocamlc -package jingoo,omd,str -linkpkg -o markaml bin/main.ml`
+
+If you want to compile statically into native binary
+
+`ocamlfind ocamlopt -package jingoo,omd,str -linkpkg -o markaml bin/main.ml`
 
 
 ## Hrefs

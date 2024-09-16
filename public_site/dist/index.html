@@ -68,8 +68,10 @@ This is just a hobby project, if you want to add features feel free to make a PR
 <ol><li>The folder location that contains all your markdown files to be generated.</li><li>The output directory.</li></ol>
 
 <p>Example: <code>dune exec markaml src/md dist</code></p>
-<h2 id="Compile">Compile</h2><p>If you want to compile the program into an executable:</p>
+<h2 id="Compile">Compile</h2><p>If you want to compile the program into bytecode executable with dynamic linking:</p>
 <p><code>ocamlfind ocamlc -package jingoo,omd,str -linkpkg -o markaml bin/main.ml</code></p>
+<p>If you want to compile statically into native binary</p>
+<p><code>ocamlfind ocamlopt -package jingoo,omd,str -linkpkg -o markaml bin/main.ml</code></p>
 <h2 id="Hrefs">Hrefs</h2><p>Headers are automatically populated with clickable link icons which correspond with their unique IDs. They appear when the cursor hovers over the header. Clicking them will copy the link to your clipboard as well as navigate.</p>
 <h2 id="Sidebar">Sidebar</h2><p>The script will replace characters; &quot;-&quot; and &quot;_&quot;  with &quot; &quot; from the title of the markdown file, as well as the suffix &quot;.md&quot; and capitalize each word in the title to produce each item on the sidebar. To ensure there are no issues, it is recommended to refrain from using spaces in your filenames.</p>
 
