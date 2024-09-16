@@ -12,6 +12,12 @@ The command takes in two arguments
 
 Example: `dune exec markaml src/md dist`
 
+## Compile
+If you want to compile the program into an executable:
+
+`ocamlfind ocamlc -package jingoo,omd,str -linkpkg -o markaml bin/main.ml`
+
+
 ## Hrefs
 Headers are automatically populated with clickable link icons which correspond with their unique IDs. They appear when the cursor hovers over the header. Clicking them will copy the link to your clipboard as well as navigate.
 
